@@ -1,0 +1,13 @@
+@startuml flowchart
+start
+:音频数据采样;
+note right
+    采样率 100kHz，
+    每次 2000 个点，
+    每 100ms 采样一次。
+end note
+:归一化处理;
+:每组数据两两互相关，求出相对时延;
+:根据时延计算角度与距离;
+stop
+@enduml
